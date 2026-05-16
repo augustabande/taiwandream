@@ -1,0 +1,2322 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Taiwan — 15 giorni · 6-20 luglio 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Noto+Serif+TC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  /* Palette */
+  --bg:        #F5F1EA;
+  --bg-deep:   #EAE4D8;
+  --paper:     #FBF8F2;
+  --ink:       #1A1A1A;
+  --ink-soft:  #3A3733;
+  --ink-mute:  #7A746B;
+  --ink-fade:  #B7B0A4;
+  --rule:      #D9D2C3;
+
+  --tea:       #5B6E4A;   /* verde foglia di tè · natura, valle, est rurale */
+  --brick:     #8B4A2B;   /* mattone Qing · templi, storia, città */
+  --pacific:   #355A6B;   /* blu Pacifico · costa est, treno */
+
+  /* Type */
+  --serif:  "Cormorant Garamond", "Noto Serif TC", "Times New Roman", serif;
+  --sans:   "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono:   "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --tc:     "Noto Serif TC", "Cormorant Garamond", serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle paper grain — used sparingly on background only */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(0,0,0,0.025) 0 1px, transparent 1px),
+    radial-gradient(circle at 72% 64%, rgba(0,0,0,0.018) 0 1px, transparent 1px),
+    radial-gradient(circle at 42% 88%, rgba(0,0,0,0.022) 0 1px, transparent 1px);
+  background-size: 7px 7px, 11px 11px, 13px 13px;
+}
+
+::selection { background: var(--ink); color: var(--bg); }
+
+a { color: inherit; text-decoration: none; }
+
+/* Typography primitives */
+.serif { font-family: var(--serif); font-weight: 400; }
+.mono  { font-family: var(--mono); }
+.tc    { font-family: var(--tc); font-weight: 400; letter-spacing: 0.04em; }
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.rule {
+  height: 1px;
+  background: var(--rule);
+  width: 100%;
+  border: 0;
+}
+
+/* ───────────────────────── HERO ───────────────────────── */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 32px 6vw 56px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  z-index: 1;
+}
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.hero-top .mark {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.hero-top .mark span { color: var(--ink-fade); }
+.hero-top .dates {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.hero-body {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 6vw;
+  align-items: center;
+  margin-top: 4vh;
+}
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(56px, 11vw, 168px);
+  line-height: 0.92;
+  letter-spacing: -0.015em;
+  margin: 0;
+  color: var(--ink);
+}
+.hero-title .em { font-style: italic; font-weight: 400; }
+.hero-title .num { display: block; }
+.hero-title .tc-sub {
+  display: block;
+  font-family: var(--tc);
+  font-weight: 300;
+  font-size: 0.22em;
+  letter-spacing: 0.3em;
+  color: var(--ink-mute);
+  margin-top: 1.2em;
+}
+.hero-meta {
+  font-family: var(--serif);
+  font-size: clamp(18px, 1.6vw, 22px);
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 24px 0 0;
+  max-width: 38ch;
+  line-height: 1.5;
+}
+.hero-meta .divider {
+  display: inline-block;
+  width: 26px;
+  height: 1px;
+  background: var(--ink-fade);
+  vertical-align: middle;
+  margin: 0 10px 4px;
+}
+
+.hero-svg-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-svg-wrap svg {
+  width: 100%;
+  height: auto;
+  max-height: 78vh;
+  overflow: visible;
+}
+.hero-svg-wrap .hero-caption {
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  line-height: 1.8;
+}
+
+.hero-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.hero-foot .stats {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.hero-foot .stats span b {
+  font-weight: 500;
+  color: var(--ink);
+  margin-right: 6px;
+}
+.scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.scroll-cue .line {
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  background: var(--ink-soft);
+  position: relative;
+  overflow: hidden;
+}
+.scroll-cue .line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  animation: cue 2.4s linear infinite;
+  transform-origin: right;
+}
+@keyframes cue {
+  0%   { transform: scaleX(1); transform-origin: right; }
+  50%  { transform: scaleX(0); transform-origin: right; }
+  50.01% { transform-origin: left; transform: scaleX(0); }
+  100% { transform: scaleX(1); transform-origin: left; }
+}
+
+/* ─────────────────── JOURNEY MAIN LAYOUT ─────────────────── */
+
+.journey {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr 38vw;
+  gap: 0;
+  border-top: 1px solid var(--rule);
+  z-index: 1;
+}
+
+/* Day-nav rail (left) */
+.day-nav {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  padding: 80px 0 40px;
+  border-right: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  z-index: 4;
+}
+.day-nav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.day-nav .nav-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-fade);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-bottom: 16px;
+}
+.day-dot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-fade);
+  background: none;
+  border: 0;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: color .25s ease;
+  position: relative;
+}
+.day-dot .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--ink-fade);
+  transition: all .25s ease;
+}
+.day-dot .num {
+  font-variant-numeric: tabular-nums;
+  width: 14px;
+  text-align: right;
+  display: inline-block;
+}
+.day-dot:hover { color: var(--ink-soft); }
+.day-dot:hover .dot { background: var(--ink-soft); transform: scale(1.4); }
+.day-dot.is-active { color: var(--ink); }
+.day-dot.is-active .dot {
+  background: var(--ink);
+  width: 8px; height: 8px;
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--ink);
+}
+.day-dot.is-past { color: var(--ink-mute); }
+.day-dot.is-past .dot { background: var(--ink-mute); }
+
+/* Content column (center) */
+.content {
+  padding: 0 8vw 0 6vw;
+  min-width: 0;
+}
+
+/* Sticky map column (right) */
+.map-rail {
+  position: relative;
+  border-left: 1px solid var(--rule);
+  background: var(--bg);
+}
+.map-rail-inner {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 56px 5% 56px 8%;
+  display: flex;
+  flex-direction: column;
+}
+.map-rail .map-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+.map-rail .map-head .label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.map-rail .map-head .now {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink);
+}
+.map-rail svg.taiwan {
+  width: auto;
+  height: 100%;
+  max-height: 70vh;
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Map legend (under map) */
+.map-legend {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.map-legend .item { display: flex; align-items: center; gap: 8px; }
+.map-legend .swatch {
+  width: 24px; height: 1px;
+  background: var(--ink-soft);
+  display: inline-block;
+}
+.map-legend .swatch.dashed {
+  background: none;
+  border-top: 1px dashed var(--ink-soft);
+  height: 1px;
+}
+.map-legend .swatch.dot {
+  width: 6px; height: 6px;
+  background: var(--ink-soft);
+  border-radius: 50%;
+}
+
+/* ─────────── Map SVG styles ─────────── */
+
+.taiwan .outline {
+  fill: var(--bg-deep);
+  stroke: var(--ink-fade);
+  stroke-width: 0.6;
+  opacity: 0.85;
+}
+.taiwan .ridge {
+  fill: none;
+  stroke: var(--ink-fade);
+  stroke-width: 0.4;
+  stroke-dasharray: 1 2.5;
+  opacity: 0.6;
+}
+.taiwan .grat {
+  stroke: var(--ink-fade);
+  stroke-width: 0.3;
+  opacity: 0.25;
+}
+.taiwan .seg {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dashoffset 1.1s cubic-bezier(.5,.1,.25,1);
+}
+.taiwan .seg.dashed {
+  stroke-dasharray: 3 3;
+}
+.taiwan .seg.solid {
+  /* dasharray applied via JS to drive draw-in */
+}
+.taiwan .city {
+  cursor: pointer;
+}
+.taiwan .city .ring {
+  fill: var(--bg);
+  stroke: var(--ink-soft);
+  stroke-width: 0.8;
+  transition: all .35s ease;
+}
+.taiwan .city .core {
+  fill: var(--ink-fade);
+  transition: all .35s ease;
+}
+.taiwan .city.is-visited .ring { stroke: var(--ink); }
+.taiwan .city.is-visited .core { fill: var(--ink); }
+.taiwan .city.is-active .ring {
+  stroke: var(--ink);
+  r: 7;
+}
+.taiwan .city.is-active .core {
+  fill: var(--ink);
+  r: 3;
+}
+.taiwan .city .label {
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  fill: var(--ink-mute);
+  pointer-events: none;
+  opacity: 0.7;
+  transition: opacity .3s ease, fill .3s ease;
+}
+.taiwan .city.is-active .label { fill: var(--ink); opacity: 1; font-weight: 500; }
+.taiwan .city.is-visited .label { fill: var(--ink-soft); opacity: 0.9; }
+
+.taiwan .compass {
+  font-family: var(--mono);
+  font-size: 6px;
+  letter-spacing: 0.4em;
+  fill: var(--ink-fade);
+  text-transform: uppercase;
+}
+.taiwan .scale-bar { stroke: var(--ink-mute); stroke-width: 0.4; }
+.taiwan .scale-txt {
+  font-family: var(--mono);
+  font-size: 5.5px;
+  letter-spacing: 0.2em;
+  fill: var(--ink-mute);
+  text-transform: uppercase;
+}
+.taiwan .sea-label {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 8px;
+  fill: var(--ink-fade);
+  letter-spacing: 0.15em;
+}
+
+/* ─────────── Day Sections (editorial) ─────────── */
+
+.day-section {
+  position: relative;
+  padding: 22vh 0 12vh;
+  border-bottom: 1px solid var(--rule);
+}
+.day-section:first-of-type { padding-top: 16vh; }
+.day-section:last-of-type { border-bottom: 0; }
+
+.day-section[data-accent="brick"]   { --accent: var(--brick); }
+.day-section[data-accent="tea"]     { --accent: var(--tea); }
+.day-section[data-accent="pacific"] { --accent: var(--pacific); }
+.day-section { --accent: var(--ink); }
+
+.day-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.day-num {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(80px, 12vw, 168px);
+  line-height: 0.78;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.day-num .sub {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: 12px;
+  font-weight: 400;
+}
+.day-titles {
+  padding-bottom: 18px;
+}
+.day-titles .date {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+.day-titles .date .dot-sep {
+  display: inline-block;
+  width: 3px; height: 3px;
+  background: var(--ink-fade);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 10px 2px;
+}
+.day-titles h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(34px, 4.2vw, 56px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+.day-titles h2 .em { font-style: italic; }
+.day-titles .place-cn {
+  font-family: var(--tc);
+  font-size: clamp(13px, 1.2vw, 17px);
+  letter-spacing: 0.32em;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.day-lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 42ch;
+  margin: 0 0 44px;
+  text-wrap: pretty;
+}
+
+.day-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* Timeline */
+.timeline {
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+}
+.timeline .label-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.timeline .label-row .l {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.timeline ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.timeline li {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+.timeline li:last-child { border-bottom: 0; }
+.timeline .time {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+.timeline .time.flex { color: var(--ink-mute); font-weight: 400; }
+.timeline .body {
+  font-family: var(--sans);
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+.timeline .body b {
+  font-weight: 500;
+  color: var(--ink);
+}
+.timeline .body .cn {
+  font-family: var(--tc);
+  font-size: 0.9em;
+  color: var(--ink-mute);
+  letter-spacing: 0.1em;
+  margin-left: 6px;
+}
+
+/* Side column: hotel + note */
+.side-col { display: flex; flex-direction: column; gap: 28px; }
+
+.hotel-card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 22px 22px 24px;
+  position: relative;
+  transition: border-color .25s ease, transform .25s ease;
+}
+.hotel-card:hover { border-color: var(--ink-soft); }
+.hotel-card .h-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.hotel-card .h-label .lab {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.hotel-card .h-label .nights {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.hotel-card h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.15;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+.hotel-card .h-cn {
+  font-family: var(--tc);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: var(--ink-mute);
+  margin-bottom: 14px;
+}
+.hotel-card .h-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 12px;
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.hotel-card .h-meta span:not(:last-child)::after {
+  content: "·";
+  margin-left: 10px;
+  color: var(--ink-fade);
+}
+.hotel-card .h-desc {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin: 0;
+  text-wrap: pretty;
+}
+.hotel-card .h-thumb {
+  width: 100%;
+  height: 110px;
+  margin-bottom: 16px;
+  background: var(--bg-deep);
+  position: relative;
+  overflow: hidden;
+}
+.hotel-card .h-thumb svg { width: 100%; height: 100%; display: block; }
+
+.note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  padding: 22px 0 0;
+  border-top: 1px solid var(--rule);
+  text-wrap: pretty;
+}
+.note .who {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--mono);
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+/* Transit interstitial */
+.transit {
+  margin: 0;
+  padding: 60px 0;
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 28px;
+}
+.transit .leg {
+  font-family: var(--serif);
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--ink);
+}
+.transit .leg.from { text-align: right; }
+.transit .leg .cn {
+  display: block;
+  font-family: var(--tc);
+  font-size: 13px;
+  letter-spacing: 0.24em;
+  color: var(--ink-mute);
+  margin-top: 4px;
+  font-weight: 400;
+}
+.transit .arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 160px;
+}
+.transit .arrow .mode {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.transit .arrow .track {
+  width: 100%;
+  height: 1px;
+  background: var(--ink-soft);
+  position: relative;
+}
+.transit[data-mode="train"] .arrow .track {
+  background: none;
+  border-top: 1px dashed var(--ink-soft);
+  height: 1px;
+}
+.transit .arrow .track::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  width: 0; height: 0;
+  border-left: 6px solid var(--ink-soft);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transform: translateY(-50%);
+}
+.transit .arrow .dur {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ─────────── Summary ─────────── */
+
+.summary {
+  padding: 16vh 0 14vh;
+  border-bottom: 1px solid var(--rule);
+}
+.summary .s-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+}
+.summary h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin: 0 0 60px;
+  color: var(--ink);
+  max-width: 16ch;
+}
+.summary h2 .em { font-style: italic; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-bottom: 70px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.stat {
+  padding: 28px 18px 24px 0;
+  border-right: 1px solid var(--rule);
+}
+.stat:last-child { border-right: 0; }
+.stat .v {
+  font-family: var(--serif);
+  font-size: clamp(38px, 4.5vw, 64px);
+  line-height: 0.92;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.stat .v .u {
+  font-size: 0.42em;
+  letter-spacing: 0.06em;
+  margin-left: 4px;
+  color: var(--ink-mute);
+  font-style: italic;
+}
+.stat .l {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+.summary h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  margin: 0 0 24px;
+  color: var(--ink);
+}
+.hotel-list { list-style: none; padding: 0; margin: 0; }
+.hotel-list li {
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: baseline;
+}
+.hotel-list .n {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+}
+.hotel-list .nm {
+  font-family: var(--serif);
+  font-size: 17px;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.hotel-list .nm .city {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: 4px;
+}
+.hotel-list .nights {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent, var(--brick));
+}
+
+.todo-list { list-style: none; padding: 0; margin: 0; }
+.todo-list li {
+  padding: 14px 0 14px 28px;
+  border-top: 1px solid var(--rule);
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  position: relative;
+  line-height: 1.5;
+}
+.todo-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 21px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--ink-fade);
+  background: var(--paper);
+}
+.todo-list li b { color: var(--ink); font-weight: 500; }
+.todo-list li .pri {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent, var(--brick));
+  margin-left: 8px;
+}
+
+/* Footer */
+.colophon {
+  padding: 60px 8vw;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 32px;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  background: var(--bg);
+}
+.colophon .left { display: flex; gap: 28px; flex-wrap: wrap; }
+.colophon .end {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--ink-soft);
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .9s ease, transform .9s cubic-bezier(.4,.1,.2,1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+.reveal.d1 { transition-delay: .08s; }
+.reveal.d2 { transition-delay: .16s; }
+.reveal.d3 { transition-delay: .24s; }
+
+/* ─────────── Responsive ─────────── */
+
+@media (max-width: 980px) {
+  .hero-body { grid-template-columns: 1fr; gap: 4vh; }
+  .hero-svg-wrap svg { max-height: 50vh; }
+
+  .journey {
+    grid-template-columns: 44px 1fr;
+  }
+  .map-rail {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    border-left: 0;
+    border-bottom: 1px solid var(--rule);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--bg);
+  }
+  .map-rail-inner {
+    position: relative;
+    height: auto;
+    padding: 14px 6vw;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+  }
+  .map-rail .map-head {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    flex: 0 0 auto;
+    gap: 4px;
+  }
+  .map-rail svg.taiwan {
+    height: 90px;
+    max-height: 90px;
+    flex: 1;
+  }
+  .map-legend { display: none; }
+  .day-nav { padding: 30px 0; height: auto; position: sticky; top: 118px; }
+  .day-nav-inner { gap: 4px; }
+  .day-nav .nav-label { display: none; }
+  .day-dot .num { font-size: 9px; }
+  .content { padding: 0 6vw; }
+  .day-grid { grid-template-columns: 1fr; gap: 36px; }
+  .day-head { grid-template-columns: 1fr; gap: 10px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2) { border-right: 0; }
+  .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--rule); }
+  .summary-grid { grid-template-columns: 1fr; gap: 40px; }
+  .colophon { padding: 40px 6vw; }
+  .transit { grid-template-columns: 1fr; text-align: center; gap: 14px; }
+  .transit .leg.from, .transit .leg.to { text-align: center; }
+  .transit .arrow { min-width: 0; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 24px 6vw 36px; }
+  .hero-foot .stats { gap: 18px; }
+  .stat .v { font-size: 36px; }
+  .day-num { font-size: 80px; }
+}
+
+/* Print */
+@media print {
+  body { background: white; }
+  .map-rail, .day-nav, .scroll-cue, .hero-svg-wrap { display: none; }
+  .journey { grid-template-columns: 1fr; }
+  .day-section { page-break-inside: avoid; padding: 30px 0; }
+  .reveal { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<template id="__bundler_thumbnail" data-bg-color="#F5F1EA">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#F5F1EA"/>
+    <g transform="translate(360 110)">
+      <path d="
+        M 240 60
+        C 290 80, 330 130, 348 220
+        C 366 310, 372 420, 360 520
+        C 348 620, 320 700, 280 740
+        C 250 770, 220 770, 200 740
+        C 170 690, 140 600, 120 480
+        C 100 360, 95 240, 110 160
+        C 130 80, 180 40, 240 60 Z
+      " fill="rgba(91,110,74,0.10)" stroke="#1A1A1A" stroke-width="2.5"/>
+      <g fill="#1A1A1A">
+        <circle cx="270" cy="120" r="9"/>
+        <circle cx="155" cy="320" r="7"/>
+        <circle cx="200" cy="560" r="7"/>
+        <circle cx="155" cy="540" r="7"/>
+        <circle cx="290" cy="600" r="7"/>
+        <circle cx="295" cy="510" r="7"/>
+      </g>
+      <path d="M 270 120 Q 200 220, 155 320 Q 165 440, 200 560 Q 240 580, 290 600 Q 305 555, 295 510 Q 320 320, 270 120" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-dasharray="6 6" opacity="0.55"/>
+    </g>
+    <text x="600" y="700" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="46" fill="#1A1A1A">Taiwan — 15 giorni</text>
+    <text x="600" y="745" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="6" fill="#7A746B">6 — 20 LUGLIO 2026</text>
+  </svg>
+</template>
+<body>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<header class="hero">
+  <div class="hero-top">
+    <div class="mark">Itinerario <span>·</span> Estate 2026 <span>·</span> Bozza 03</div>
+    <div class="dates">6 → 20 Luglio</div>
+  </div>
+
+  <div class="hero-body">
+    <div>
+      <h1 class="hero-title">
+        <span>Taiwan<span class="em">.</span></span>
+        <span class="num">15 <span class="em">giorni</span></span>
+        <span class="tc-sub">臺灣 — 十五日</span>
+      </h1>
+      <p class="hero-meta">
+        Quindici giorni dall'umido luminoso di Taipei alla valle est, e ritorno.
+        <span class="divider"></span>
+        Una linea che scende lungo la costa ovest, taglia il sud, risale il Pacifico, torna in treno.
+      </p>
+    </div>
+
+    <div class="hero-svg-wrap">
+      <div class="hero-caption">
+        Tropico<br />del Cancro<br />23.5° N
+      </div>
+      <!-- Decorative hero map -->
+      <svg viewBox="0 0 220 600" aria-hidden="true">
+        <defs>
+          <pattern id="grain" width="3" height="3" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.3" fill="rgba(0,0,0,0.05)"/>
+          </pattern>
+        </defs>
+
+        <!-- Tropic of Cancer line -->
+        <line x1="0" y1="395" x2="220" y2="395" stroke="var(--ink-fade)" stroke-width="0.4" stroke-dasharray="2 4" opacity="0.7"/>
+
+        <!-- Outline -->
+        <path d="
+          M 138 38
+          C 152 44, 165 60, 170 88
+          C 175 120, 178 158, 178 200
+          C 178 252, 175 308, 168 360
+          C 161 412, 150 462, 136 502
+          C 124 535, 112 552, 100 545
+          C 92 538, 86 518, 80 488
+          C 70 432, 60 372, 55 308
+          C 51 244, 53 182, 60 130
+          C 67 88, 80 58, 100 46
+          C 115 38, 128 36, 138 38 Z
+        " fill="rgba(91,110,74,0.08)" stroke="var(--ink-soft)" stroke-width="0.7"/>
+
+        <path d="
+          M 138 38
+          C 152 44, 165 60, 170 88
+          C 175 120, 178 158, 178 200
+          C 178 252, 175 308, 168 360
+          C 161 412, 150 462, 136 502
+          C 124 535, 112 552, 100 545
+          C 92 538, 86 518, 80 488
+          C 70 432, 60 372, 55 308
+          C 51 244, 53 182, 60 130
+          C 67 88, 80 58, 100 46
+          C 115 38, 128 36, 138 38 Z
+        " fill="url(#grain)"/>
+
+        <!-- Mountain ridge dashes -->
+        <path d="M 120 90 Q 128 200, 122 320 T 110 470" fill="none" stroke="var(--ink-fade)" stroke-width="0.5" stroke-dasharray="0.6 3"/>
+
+        <!-- City dots (muted in hero) -->
+        <g fill="var(--ink-soft)">
+          <circle cx="148" cy="75" r="2.5"/>
+          <circle cx="90" cy="215" r="1.8"/>
+          <circle cx="72" cy="240" r="1.8"/>
+          <circle cx="85" cy="410" r="2.2"/>
+          <circle cx="115" cy="430" r="1.8"/>
+          <circle cx="105" cy="455" r="1.8"/>
+          <circle cx="140" cy="475" r="1.8"/>
+          <circle cx="152" cy="445" r="2.2"/>
+          <circle cx="155" cy="395" r="2.2"/>
+        </g>
+
+        <!-- Compass -->
+        <g transform="translate(196 525)">
+          <line x1="0" y1="-12" x2="0" y2="12" stroke="var(--ink-soft)" stroke-width="0.6"/>
+          <polygon points="0,-12 -3,-4 3,-4" fill="var(--ink-soft)"/>
+          <text text-anchor="middle" y="-16" font-family="IBM Plex Mono" font-size="6" letter-spacing="0.3" fill="var(--ink-mute)">N</text>
+        </g>
+
+        <!-- Sea labels -->
+        <text x="20" y="180" class="sea-label" font-family="Cormorant Garamond" font-style="italic" font-size="9" fill="var(--ink-fade)">Stretto · 臺灣海峽</text>
+        <text x="190" y="280" class="sea-label" font-family="Cormorant Garamond" font-style="italic" font-size="9" fill="var(--ink-fade)" text-anchor="end" transform="rotate(90 190 280)">Pacifico</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="stats">
+      <span><b>15</b> giorni</span>
+      <span><b>9</b> hotel</span>
+      <span><b>3</b> mezzi</span>
+      <span><b>~1.000</b> km</span>
+    </div>
+    <div class="scroll-cue"><span class="line"></span> Scorri</div>
+  </div>
+</header>
+
+<!-- ═══════════════════════ JOURNEY ═══════════════════════ -->
+<div class="journey">
+
+  <!-- Day rail (left) -->
+  <nav class="day-nav" aria-label="Giorni del viaggio">
+    <div class="day-nav-inner" id="day-nav">
+      <span class="nav-label">Giorno · 日</span>
+      <!-- buttons injected by JS -->
+    </div>
+  </nav>
+
+  <!-- Content (center) -->
+  <main class="content" id="content">
+
+    <!-- ───────── Day 01 ───────── -->
+    <section class="day-section" id="d1" data-day="1" data-city="taipei" data-accent="brick" data-screen-label="Day 01 · Taipei">
+      <header class="day-head reveal">
+        <div class="day-num">01<span class="sub">六日 · Lun</span></div>
+        <div class="day-titles">
+          <div class="date">6 Luglio 2026 <span class="dot-sep"></span> Lunedì <span class="dot-sep"></span> Tappa 1 di 7</div>
+          <h2>Arrivo a <span class="em">Taipei</span></h2>
+          <div class="place-cn">臺北 — Zhongshan</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Il viaggio comincia con un volo che si chiude sull'umidità subtropicale di Taoyuan. Una linea della MRT, una via di Zhongshan, e già si è dentro.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row">
+            <span class="l">Programma</span>
+            <span class="l">Giorno 01</span>
+          </div>
+          <ol>
+            <li><span class="time flex">—</span><div class="body">Atterraggio a <b>Taoyuan International</b>. MRT Airport Line fino a <b>Taipei Main Station</b> (36 min), cambio per Songjiang Nanjing.</div></li>
+            <li><span class="time flex">pm</span><div class="body">Check-in <b>Humble Boutique Hotel</b>, a un minuto dall'uscita della MRT.</div></li>
+            <li><span class="time flex">sera</span><div class="body">Prima cena leggera in zona Zhongshan. Rientro presto: il jet-lag è amico solo se ascoltato.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-thumb"><svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="t1" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="6" stroke="#bcb39f" stroke-width="1"/></pattern></defs>
+              <rect width="200" height="110" fill="#D9D2C3"/>
+              <rect width="200" height="110" fill="url(#t1)"/>
+              <text x="100" y="60" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" letter-spacing="2" fill="#7a746b">[ HOTEL · PHOTO ]</text>
+            </svg></div>
+            <div class="h-label"><span class="lab">Notte 1</span><span class="nights">3 notti</span></div>
+            <h3>Humble Boutique Hotel</h3>
+            <div class="h-cn">謙商旅 · Songjiang Rd 116</div>
+            <div class="h-meta"><span>4★</span><span>Design Eco</span><span>Zhongshan</span></div>
+            <p class="h-desc">Boutique pulito sopra l'intersezione di due linee MRT. Piscina interna, sauna, palestra, colazione 7–10.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 02 ───────── -->
+    <section class="day-section" id="d2" data-day="2" data-city="taipei" data-accent="brick" data-screen-label="Day 02 · Taipei">
+      <header class="day-head reveal">
+        <div class="day-num">02<span class="sub">七日 · Mar</span></div>
+        <div class="day-titles">
+          <div class="date">7 Luglio 2026 <span class="dot-sep"></span> Martedì</div>
+          <h2>Taipei <span class="em">— stratificata</span></h2>
+          <div class="place-cn">臺北 — Da definire</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Una giornata da costruire sul ritmo del corpo. Le opzioni si presentano in ordine di temperatura, dal mattino al pomeriggio climatizzato.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row">
+            <span class="l">Opzioni</span>
+            <span class="l">Giorno 02</span>
+          </div>
+          <ol>
+            <li><span class="time">06:30</span><div class="body">Tai chi mattutino al <b>228 Peace Park</b> o al CKS Memorial. Stile Yang, gruppi spontanei.</div></li>
+            <li><span class="time flex">am</span><div class="body"><b>National Palace Museum</b> <span class="cn">故宮博物院</span> al fresco, o passeggiata a Dadaocheng <span class="cn">大稻埕</span>.</div></li>
+            <li><span class="time flex">pm</span><div class="body">Pomeriggio climatizzato: tea house a Maokong via gondola, o quartiere di Yongkang.</div></li>
+            <li><span class="time flex">sera</span><div class="body">Mercato notturno: <b>Raohe</b> per atmosfera storica o <b>Ningxia</b> per il street food più puro.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Notte 2</span><span class="nights">stesso</span></div>
+            <h3>Humble Boutique Hotel</h3>
+            <div class="h-cn">謙商旅 · Songjiang Rd 116</div>
+            <p class="h-desc">Si rientra alla stessa stanza. Bagagli leggeri, niente check-out al mattino.</p>
+          </div>
+          <p class="note">Strategia caldo per tutta la prima settimana: attivi all'aperto entro le 10.30, climatizzati o coperti dalle 13 alle 17, di nuovo fuori al tramonto. Vale per Taipei come per Tainan e Dulan.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 03 ───────── -->
+    <section class="day-section" id="d3" data-day="3" data-city="taipei" data-accent="brick" data-screen-label="Day 03 · Taipei">
+      <header class="day-head reveal">
+        <div class="day-num">03<span class="sub">八日 · Mer</span></div>
+        <div class="day-titles">
+          <div class="date">8 Luglio 2026 <span class="dot-sep"></span> Mercoledì</div>
+          <h2>Taipei <span class="em">— ultima soglia</span></h2>
+          <div class="place-cn">臺北 — Da definire</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Ultimo giorno prima della discesa verso ovest. Si chiudono i conti con la città — un quartiere mancato, un'ultima ciotola di noodle al brodo.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Giorno 03</span></div>
+          <ol>
+            <li><span class="time flex">am</span><div class="body">Beitou <span class="cn">北投</span> termale (storia, non bagno: luglio è troppo caldo) o Yangmingshan a piedi.</div></li>
+            <li><span class="time flex">am</span><div class="body">Alternativa urbana: Longshan Temple <span class="cn">龍山寺</span>, Bopiliao Historic Block, Huaxi Street.</div></li>
+            <li><span class="time flex">pm</span><div class="body">Pomeriggio caffè e librerie a Yongkang o Zhongshan, ultimi acquisti.</div></li>
+            <li><span class="time flex">sera</span><div class="body">Cena xiaolongbao <span class="cn">小籠包</span> alla sede originale, valigia preparata. Sveglia presto domani.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Notte 3</span><span class="nights">ultima</span></div>
+            <h3>Humble Boutique Hotel</h3>
+            <div class="h-cn">謙商旅</div>
+            <p class="h-desc">Domani check-out alle 09:30. Bagaglio compatto: tutto entra in auto a Taichung HSR.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Transit T1 ───────── -->
+    <aside class="transit reveal" data-mode="rail-car" data-from="taipei" data-to="lukang">
+      <div class="leg from">
+        Taipei <span class="cn">臺北</span>
+      </div>
+      <div class="arrow">
+        <span class="mode">HSR · auto</span>
+        <span class="track"></span>
+        <span class="dur">~ 2 h 30</span>
+      </div>
+      <div class="leg to">
+        Lukang <span class="cn">鹿港</span>
+      </div>
+    </aside>
+
+    <!-- ───────── Day 04 ───────── -->
+    <section class="day-section" id="d4" data-day="4" data-city="lukang" data-accent="brick" data-screen-label="Day 04 · Lukang">
+      <header class="day-head reveal">
+        <div class="day-num">04<span class="sub">九日 · Gio</span></div>
+        <div class="day-titles">
+          <div class="date">9 Luglio 2026 <span class="dot-sep"></span> Giovedì <span class="dot-sep"></span> Transfer Day</div>
+          <h2>Discesa a <span class="em">Lukang</span></h2>
+          <div class="place-cn">鹿港 — Changhua County</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Una città portuale Qing del 1700 raggiunta in due mezzi e una manciata d'ore. Si arriva quando i pullman dei day-tripper sono già rientrati a Taichung, e i vicoli si chetano.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Trasferimento</span></div>
+          <ol>
+            <li><span class="time">09:30</span><div class="body">Check-out Humble, MRT a Taipei Main Station.</div></li>
+            <li><span class="time">10:30</span><div class="body"><b>HSR Taipei → Taichung</b>, una sola ora. Ritiro auto Toyota Corolla Cross alla stazione.</div></li>
+            <li><span class="time">13:30</span><div class="body">Arrivo Lukang. Check-in <b>Yong Le</b>, a 100 m dal Longshan Temple <span class="cn">龍山寺</span>.</div></li>
+            <li><span class="time">15:30</span><div class="body">Vagabondaggio nel centro storico: templi del 1786, intagli lignei originali, Old Market Street.</div></li>
+            <li><span class="time">19:30</span><div class="body">Cena con lanterne accese. Atmosfera serale silenziosa, i turisti sono tornati a casa.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-thumb"><svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="t4" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="5" stroke="#bcab8f" stroke-width="0.8"/></pattern></defs>
+              <rect width="200" height="110" fill="#D2C9B3"/>
+              <rect width="200" height="110" fill="url(#t4)"/>
+              <text x="100" y="60" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" letter-spacing="2" fill="#7a746b">[ COURTYARD · QING ]</text>
+            </svg></div>
+            <div class="h-label"><span class="lab">Notte 4</span><span class="nights">2 notti</span></div>
+            <h3>Yong Le, Tribute Portfolio</h3>
+            <div class="h-cn">永樂酒店 · 三民路 152</div>
+            <div class="h-meta"><span>Marriott</span><span>Boutique</span><span>Parcheggio</span></div>
+            <p class="h-desc">Boutique brand Marriott a 100 m dal Lugang Longshan Temple, 400 m dai Nine-Turns Lane. Colazione 7–10.</p>
+          </div>
+          <p class="note">Gio + ven scelti apposta. Sabato Lukang si riempie di turismo domestico e i prezzi raddoppiano.<span class="who">Logistica · regola n. 1</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 05 ───────── -->
+    <section class="day-section" id="d5" data-day="5" data-city="lukang" data-accent="brick" data-screen-label="Day 05 · Lukang">
+      <header class="day-head reveal">
+        <div class="day-num">05<span class="sub">十日 · Ven</span></div>
+        <div class="day-titles">
+          <div class="date">10 Luglio 2026 <span class="dot-sep"></span> Venerdì</div>
+          <h2><span class="em">Lukang</span> — full day</h2>
+          <div class="place-cn">鹿港 — Folk Arts &amp; Mazu</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Mattina presto e sera tardi, quando la città è dei suoi. Botteghe di lanterne dipinte a mano, sculture lignee per templi, il mezzo pozzo dentro e fuori dal muro.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Slow day</span></div>
+          <ol>
+            <li><span class="time">06:30</span><div class="body">Tai chi nella piazza del <b>Mazu Temple</b> <span class="cn">天后宮</span>, gruppi spontanei di anziani.</div></li>
+            <li><span class="time">09:00</span><div class="body">Mazu Temple, fondato 1591 — statua originale dal Fujian. <b>Folk Arts Museum</b> nella vecchia residenza Koo.</div></li>
+            <li><span class="time">12:30</span><div class="body">Pranzo: shrimp monkey fritto <span class="cn">蝦猴</span>, ox tongue cookies, phoenix-eye cake.</div></li>
+            <li><span class="time">14:00</span><div class="body"><b>Nine-Turns Lane</b> <span class="cn">九曲巷</span>, Half-Side Well, Gentleman's Alley. Workshop lanterne se prenotabile in giornata.</div></li>
+            <li><span class="time">17:30</span><div class="body">Tea house tradizionale in casa storica. Cena pesce locale, oyster vermicelli.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Notte 5</span><span class="nights">stesso</span></div>
+            <h3>Yong Le, Tribute Portfolio</h3>
+            <div class="h-cn">永樂酒店</div>
+            <p class="h-desc">Camera invariata. Bagagli fermi: domani si guida al sud, verso il mondo Hakka.</p>
+          </div>
+          <p class="note">«Una città dove i vicoli sono progettati per dis­orientare il vento, non i visitatori.»<span class="who">Note di lettura · Lukang</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Transit T2 ───────── -->
+    <aside class="transit reveal" data-mode="car" data-from="lukang" data-to="meinong">
+      <div class="leg from">Lukang <span class="cn">鹿港</span></div>
+      <div class="arrow">
+        <span class="mode">Auto · Highway 1 S</span>
+        <span class="track"></span>
+        <span class="dur">~ 3 h</span>
+      </div>
+      <div class="leg to">Meinong <span class="cn">美濃</span></div>
+    </aside>
+
+    <!-- ───────── Day 06 ───────── -->
+    <section class="day-section" id="d6" data-day="6" data-city="meinong" data-accent="tea" data-screen-label="Day 06 · Meinong">
+      <header class="day-head reveal">
+        <div class="day-num">06<span class="sub">十一日 · Sab</span></div>
+        <div class="day-titles">
+          <div class="date">11 Luglio 2026 <span class="dot-sep"></span> Sabato <span class="dot-sep"></span> Transfer Day</div>
+          <h2>Verso il sud <span class="em">Hakka</span></h2>
+          <div class="place-cn">美濃 — Kaohsiung County</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Tre ore lungo l'autostrada 1 sud, dentro l'altro Taiwan: villaggi Hakka, risaie, capannoni di tabacco abbandonati, la Moonlight Mountain dietro casa.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Verso il sud</span></div>
+          <ol>
+            <li><span class="time">10:00</span><div class="body">Partenza in auto, Highway 1 sud fino all'uscita Qishan/Meinong.</div></li>
+            <li><span class="time">13:00</span><div class="body">Pranzo Hakka: <b>ban-tiao</b> <span class="cn">粄條</span> (pasta piatta in brodo), pork belly con squid secco, salted vegetables.</div></li>
+            <li><span class="time">14:30</span><div class="body">Check-in <b>Yellow and Black Guest House</b>: casa Hakka di 80 anni di fronte alle risaie.</div></li>
+            <li><span class="time">15:00</span><div class="body">Hakka Cultural Museum, East Gate Tower (1755), bottega <b>ombrelli di carta oliata</b>.</div></li>
+            <li><span class="time">18:00</span><div class="body">Tramonto al <b>Meinong Lake</b> o tra i campi di tabacco con i vecchi essiccatori.</div></li>
+            <li><span class="time">21:00</span><div class="body">Rientro: collezione vinili della padrona di casa, ex DJ radio.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-thumb"><svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="t6" width="7" height="7" patternUnits="userSpaceOnUse">
+                <rect width="3.5" height="3.5" fill="#9aa886" opacity="0.4"/>
+                <rect x="3.5" y="3.5" width="3.5" height="3.5" fill="#9aa886" opacity="0.4"/></pattern></defs>
+              <rect width="200" height="110" fill="#C7CDB5"/>
+              <rect width="200" height="110" fill="url(#t6)"/>
+              <text x="100" y="60" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" letter-spacing="2" fill="#5b6e4a">[ RICE PADDIES · HAKKA ]</text>
+            </svg></div>
+            <div class="h-label"><span class="lab">Notte 6</span><span class="nights">1 notte</span></div>
+            <h3>Yellow &amp; Black Guest House</h3>
+            <div class="h-cn">香蕉與黑膠</div>
+            <div class="h-meta"><span>Casa Hakka</span><span>80 anni</span><span>Vista risaie</span></div>
+            <p class="h-desc">Restauro di Chung Shi-wei, di fronte alle risaie con la Moonlight Mountain alle spalle.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Transit T3 ───────── -->
+    <aside class="transit reveal" data-mode="car" data-from="meinong" data-to="tainan">
+      <div class="leg from">Meinong <span class="cn">美濃</span></div>
+      <div class="arrow">
+        <span class="mode">Auto · Highway 28</span>
+        <span class="track"></span>
+        <span class="dur">~ 1 h</span>
+      </div>
+      <div class="leg to">Tainan <span class="cn">臺南</span></div>
+    </aside>
+
+    <!-- ───────── Day 07 ───────── -->
+    <section class="day-section" id="d7" data-day="7" data-city="tainan" data-accent="brick" data-screen-label="Day 07 · Tainan">
+      <header class="day-head reveal">
+        <div class="day-num">07<span class="sub">十二日 · Dom</span></div>
+        <div class="day-titles">
+          <div class="date">12 Luglio 2026 <span class="dot-sep"></span> Domenica</div>
+          <h2>Farfalle gialle, poi <span class="em">Tainan</span></h2>
+          <div class="place-cn">臺南 — antica capitale</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Sveglia presto. Luglio è il mese delle Catopsilia: la valle in fondo al villaggio ne è piena. Poi un'ora di guida e si è nella vecchia capitale.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Doppio luogo</span></div>
+          <ol>
+            <li><span class="time">07:00</span><div class="body"><b>Yellow Butterfly Valley</b> <span class="cn">黃蝶翠谷</span>: farfalle gialle in piena stagione, 1h30 di passeggiata facile.</div></li>
+            <li><span class="time">09:00</span><div class="body">Colazione Hakka tradizionale: <b>lei cha</b> <span class="cn">擂茶</span>, tè battuto con noci, sesamo, cereali.</div></li>
+            <li><span class="time">12:00</span><div class="body">Check-out, partenza per Tainan via Highway 28 e autostrada.</div></li>
+            <li><span class="time">15:00</span><div class="body">Confucius Temple <span class="cn">孔廟</span>, Fuzhong Street pedonale con caffè in case tradizionali.</div></li>
+            <li><span class="time">17:30</span><div class="body">Chihkan Tower (Fort Provintia) e Grand Mazu Temple al tramonto.</div></li>
+            <li><span class="time">19:30</span><div class="body">Prima cena street food: danzai noodles <span class="cn">擔仔麵</span> al Du Hsiao Yueh, coffin bread.</div></li>
+            <li><span class="time">21:30</span><div class="body">Drink al TCRC Bar o passeggiata a Shennong Street illuminata.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-thumb"><svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="t7" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+                <line x1="0" y1="0" x2="6" y2="0" stroke="#b5826a" stroke-width="0.6"/></pattern></defs>
+              <rect width="200" height="110" fill="#D6BFA9"/>
+              <rect width="200" height="110" fill="url(#t7)"/>
+              <text x="100" y="60" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" letter-spacing="2" fill="#7a746b">[ SHENNONG ST. · NIGHT ]</text>
+            </svg></div>
+            <div class="h-label"><span class="lab">Notte 7</span><span class="nights">2 notti</span></div>
+            <h3>Hotel Initial-Tainan</h3>
+            <div class="h-cn">旅幸福 · Kangle St 142</div>
+            <div class="h-meta"><span>3★ Boutique</span><span>37 camere</span><span>Bici</span></div>
+            <p class="h-desc">5–10 min a piedi da Shennong Street, 170 m da Hai'an Road Art Street. Bici gratuite.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 08 ───────── -->
+    <section class="day-section" id="d8" data-day="8" data-city="tainan" data-accent="brick" data-screen-label="Day 08 · Tainan">
+      <header class="day-head reveal">
+        <div class="day-num">08<span class="sub">十三日 · Lun</span></div>
+        <div class="day-titles">
+          <div class="date">13 Luglio 2026 <span class="dot-sep"></span> Lunedì</div>
+          <h2><span class="em">Tainan</span> — full day</h2>
+          <div class="place-cn">臺南 — templi e Anping</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Strategia anti-caldo applicata in modo rigoroso: dalle 6.30 alle 10.30 fuori, dalle 11 alle 17 al chiuso, di nuovo fuori al tramonto fino a notte.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Templi + Anping</span></div>
+          <ol>
+            <li><span class="time">06:00</span><div class="body">Tai chi al Tainan Park o area Confucius Temple. Stile Yang prevalente, anziani locali.</div></li>
+            <li><span class="time">07:30</span><div class="body">Colazione beef soup <span class="cn">牛肉湯</span>: Wen Zhang <span class="cn">王家府城</span> o A-Cai.</div></li>
+            <li><span class="time">09:00</span><div class="body">Circuito templi a piedi: Grand Mazu → Official God of War → Confucius → Koxinga Shrine.</div></li>
+            <li><span class="time">14:00</span><div class="body"><b>Chimei Museum</b> <span class="cn">奇美博物館</span> climatizzato (alternativa: Museo della Letteratura).</div></li>
+            <li><span class="time">17:15</span><div class="body">Auto ad Anping: Tree House → Old Fort → Old Street al tramonto.</div></li>
+            <li><span class="time">19:45</span><div class="body">Cena Anping: Zhou's Shrimp Rolls, milkfish congee, ostriche.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Notte 8</span><span class="nights">ultima</span></div>
+            <h3>Hotel Initial-Tainan</h3>
+            <div class="h-cn">旅幸福</div>
+            <p class="h-desc">Domani giornata lunga di trasferimento alla costa est. Pieno di benzina al mattino presto.</p>
+          </div>
+          <p class="note">Anping ha cinque ore tra le 14 e le 19 in cui non passa quasi nessuno. È la finestra giusta.<span class="who">Tainan · note di campo</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Transit T4 — long crossing ───────── -->
+    <aside class="transit reveal" data-mode="car" data-from="tainan" data-to="dulan">
+      <div class="leg from">Tainan <span class="cn">臺南</span></div>
+      <div class="arrow">
+        <span class="mode">Auto · via Fo Guang Shan · Hwy 9 S</span>
+        <span class="track"></span>
+        <span class="dur">~ 5 h</span>
+      </div>
+      <div class="leg to">Dulan <span class="cn">都蘭</span></div>
+    </aside>
+
+    <!-- ───────── Day 09 ───────── -->
+    <section class="day-section" id="d9" data-day="9" data-city="dulan" data-accent="pacific" data-screen-label="Day 09 · Dulan">
+      <header class="day-head reveal">
+        <div class="day-num">09<span class="sub">十四日 · Mar</span></div>
+        <div class="day-titles">
+          <div class="date">14 Luglio 2026 <span class="dot-sep"></span> Martedì <span class="dot-sep"></span> Crossing</div>
+          <h2>Attraverso il sud, fino al <span class="em">Pacifico</span></h2>
+          <div class="place-cn">都蘭 — Amis village</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">La giornata più lunga in auto. Si parte da Tainan, si tocca un monastero buddhista monumentale, poi la South Link Highway con la spiaggia di sabbia nera, e infine il Pacifico in faccia.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Lungo trasferimento</span></div>
+          <ol>
+            <li><span class="time">08:00</span><div class="body">Check-out Tainan, auto verso <b>Fo Guang Shan Monastery</b> <span class="cn">佛光山</span> (1h).</div></li>
+            <li><span class="time">09:00</span><div class="body">Fo Guang Shan e Buddha Memorial Center: Buddha di 36 m, complesso monumentale moderno.</div></li>
+            <li><span class="time">11:30</span><div class="body">South Link Highway via Highway 88 e 9. Sosta pranzo a Fangliao (acquacoltura).</div></li>
+            <li><span class="time">15:30</span><div class="body">Sosta <b>Taimali</b>: railway station famosa per alba sul Pacifico, sabbia nera.</div></li>
+            <li><span class="time">17:30</span><div class="body">Arrivo Dulan. Check-in <b>La Tree</b>, homestay rurale immerso nel verde.</div></li>
+            <li><span class="time">21:00</span><div class="body">Sera al <b>Dulan Sugar Factory</b>: caffè, gallerie aperte, eventuali concerti acustici.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-thumb"><svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="t9" width="8" height="8" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="4" x2="8" y2="4" stroke="#446677" stroke-width="0.6" opacity="0.5"/>
+                <line x1="0" y1="0" x2="8" y2="0" stroke="#446677" stroke-width="0.4" opacity="0.3"/></pattern></defs>
+              <rect width="200" height="110" fill="#B7C5CC"/>
+              <rect width="200" height="110" fill="url(#t9)"/>
+              <text x="100" y="60" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" letter-spacing="2" fill="#355A6B">[ PACIFIC · DULAN COAST ]</text>
+            </svg></div>
+            <div class="h-label"><span class="lab">Notte 9</span><span class="nights">2 notti</span></div>
+            <h3>La Tree Homestay</h3>
+            <div class="h-cn">普椿農場木子莊園</div>
+            <div class="h-meta"><span>Homestay</span><span>Reg. 1437</span><span>Rurale</span></div>
+            <p class="h-desc">Ambiente agricolo Taitung. Domani: 'Etolan Style tour, immersi nella comunità Amis.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 10 ───────── -->
+    <section class="day-section" id="d10" data-day="10" data-city="dulan" data-accent="pacific" data-screen-label="Day 10 · Dulan">
+      <header class="day-head reveal">
+        <div class="day-num">10<span class="sub">十五日 · Mer</span></div>
+        <div class="day-titles">
+          <div class="date">15 Luglio 2026 <span class="dot-sep"></span> Mercoledì</div>
+          <h2><span class="em">'Etolan</span> — cultura Amis</h2>
+          <div class="place-cn">都蘭國 — Etolan Style</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">La giornata più immersiva del viaggio. Tour antropologico al mattino con la comunità Amis di Dulan, pomeriggio in studio di barkcloth, sera con le stelle e poco inquinamento luminoso.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Immersione</span></div>
+          <ol>
+            <li><span class="time">09:00</span><div class="body"><b>'Etolan Style Tour</b> <span class="cn">都蘭國</span>: Mountain, Sea o Walking Tour della comunità Amis. Da prenotare 3 giorni prima.</div></li>
+            <li><span class="time">13:00</span><div class="body">Pranzo nel tour (foraging cucinato in ciotole di cocco) o nel villaggio.</div></li>
+            <li><span class="time">14:30</span><div class="body">Studio <b>Panai Faki / Brother Pan</b> a Donghe — barkcloth Amis in corteccia di paper mulberry.</div></li>
+            <li><span class="time">15:30</span><div class="body">DIY workshop indoor (tessitura, fermentazione riso, pompon di filato) — ideale per il caldo.</div></li>
+            <li><span class="time">18:30</span><div class="body">Tramonto al Moonlight Inn Pier, costa libera di Dulan.</div></li>
+            <li><span class="time">21:00</span><div class="body">Sugar Factory market: cucina Amis, concerto acustico, cielo stellato in homestay.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Notte 10</span><span class="nights">stesso</span></div>
+            <h3>La Tree Homestay</h3>
+            <div class="h-cn">普椿農場木子莊園</div>
+            <p class="h-desc">Niente check-out domattina presto: si parte con calma dopo colazione.</p>
+          </div>
+          <p class="note">'Etolan è un'impresa sociale: i ricavi finanziano la comunità Amis. Prenotare via email <em>etulan1109@gmail.com</em> o LINE almeno 3 giorni prima.<span class="who">Note · prenotazioni</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Transit T5 ───────── -->
+    <aside class="transit reveal" data-mode="car" data-from="dulan" data-to="chishang">
+      <div class="leg from">Dulan <span class="cn">都蘭</span></div>
+      <div class="arrow">
+        <span class="mode">Auto · Hwy 11 + 9 N</span>
+        <span class="track"></span>
+        <span class="dur">~ 1 h</span>
+      </div>
+      <div class="leg to">Chishang <span class="cn">池上</span></div>
+    </aside>
+
+    <!-- ───────── Day 11 ───────── -->
+    <section class="day-section" id="d11" data-day="11" data-city="chishang" data-accent="tea" data-screen-label="Day 11 · Chishang">
+      <header class="day-head reveal">
+        <div class="day-num">11<span class="sub">十六日 · Gio</span></div>
+        <div class="day-titles">
+          <div class="date">16 Luglio 2026 <span class="dot-sep"></span> Giovedì <span class="dot-sep"></span> Verso l'interno</div>
+          <h2>Risaie a <span class="em">Chishang</span></h2>
+          <div class="place-cn">池上 — East Rift Valley</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Dalla costa Pacifica all'entroterra rurale, un'ora di valle. Bici tra le risaie di Wan'an village, Brown Boulevard al tramonto, una luce che vale il viaggio.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Bici e risaie</span></div>
+          <ol>
+            <li><span class="time">09:30</span><div class="body">Check-out La Tree, auto Dulan → Chishang via Highway 11 nord e 9.</div></li>
+            <li><span class="time">11:30</span><div class="body">Pranzo bian dang <span class="cn">便當</span> alla sede storica Chihshang Wu Taste.</div></li>
+            <li><span class="time">13:30</span><div class="body">Check-in <b>How Has Homestay</b>, immerso nelle risaie a 17 min a piedi da Mr. Brown Avenue.</div></li>
+            <li><span class="time">15:00</span><div class="body">Bici tra le risaie di Wan'an village: Brown Boulevard, Mr. Brown Avenue, Kaneshiro Tree.</div></li>
+            <li><span class="time">18:30</span><div class="body">Tramonto sul Brown Boulevard. Luce dorata sulle risaie, momento più bello.</div></li>
+            <li><span class="time">19:30</span><div class="body">Cena in homestay: bian dang, riso premium, verdure di valle.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-thumb"><svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="t11" width="10" height="6" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="3" x2="10" y2="3" stroke="#7d8a5e" stroke-width="0.5"/>
+                <line x1="0" y1="0" x2="10" y2="0" stroke="#7d8a5e" stroke-width="0.3" opacity="0.6"/></pattern></defs>
+              <rect width="200" height="110" fill="#B9C29C"/>
+              <rect width="200" height="110" fill="url(#t11)"/>
+              <text x="100" y="60" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" letter-spacing="2" fill="#5b6e4a">[ RISAIE · WAN'AN ]</text>
+            </svg></div>
+            <div class="h-label"><span class="lab">Notte 11</span><span class="nights">2 notti</span></div>
+            <h3>How Has Homestay</h3>
+            <div class="h-cn">好和院景</div>
+            <div class="h-meta"><span>9.9 / 10</span><span>Risaie</span><span>Bici</span></div>
+            <p class="h-desc">Courtyard interno, due gatti di casa, noleggio bici on-site. 17 min a piedi da Mr. Brown Avenue.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 12 ───────── -->
+    <section class="day-section" id="d12" data-day="12" data-city="chishang" data-accent="tea" data-screen-label="Day 12 · Chishang">
+      <header class="day-head reveal">
+        <div class="day-num">12<span class="sub">十七日 · Ven</span></div>
+        <div class="day-titles">
+          <div class="date">17 Luglio 2026 <span class="dot-sep"></span> Venerdì</div>
+          <h2>Alba, mochi, <span class="em">gigli</span></h2>
+          <div class="place-cn">池上 · 玉里 · 六十石山</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Sveglia alle 5.30, alba sulle risaie, venti chilometri in bici quando non c'è ancora nessuno. Poi Yuli per il mochi tradizionale e la fioritura dei gigli arancioni a Liushidan.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Giorno pieno</span></div>
+          <ol>
+            <li><span class="time">05:30</span><div class="body">Alba sulle risaie, ~05:20 in luglio. Luce magica, zero turisti.</div></li>
+            <li><span class="time">06:00</span><div class="body"><b>Loop bici Chishang completo</b> (20 km, 2h): Brown Boulevard, Wan'an, Brick Kiln, Tianhou Tree.</div></li>
+            <li><span class="time">09:30</span><div class="body">Auto a <b>Yuli</b> <span class="cn">玉里</span>: bottega di mochi tradizionale, Old Train Station, day market.</div></li>
+            <li><span class="time">14:30</span><div class="body"><b>Liushidan / 60 Stone Mountain</b> <span class="cn">六十石山</span>: gigli arancioni in piena fioritura.</div></li>
+            <li><span class="time">18:30</span><div class="body">Tramonto al <b>Wan'an Brick Kiln Village</b>: vecchia fornace di mattoni, archeologia industriale.</div></li>
+            <li><span class="time">21:30</span><div class="body">Cielo stellato davanti all'homestay.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Notte 12</span><span class="nights">ultima</span></div>
+            <h3>How Has Homestay</h3>
+            <div class="h-cn">好和院景</div>
+            <p class="h-desc">Domattina presto si chiude il loop dell'auto. Consegna alla Taitung TRA station, non al city center.</p>
+          </div>
+          <p class="note">«La luce migliore di Taiwan è tra le sei e le otto del mattino, sulle risaie. Tutto il resto è un di più.»<span class="who">Note · Chishang</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Transit T6 ───────── -->
+    <aside class="transit reveal" data-mode="train" data-from="taitung" data-to="taipei">
+      <div class="leg from">Taitung <span class="cn">臺東</span></div>
+      <div class="arrow">
+        <span class="mode">Puyuma Express 417</span>
+        <span class="track"></span>
+        <span class="dur">11:04 → 15:07</span>
+      </div>
+      <div class="leg to">Taipei <span class="cn">臺北</span></div>
+    </aside>
+
+    <!-- ───────── Day 13 ───────── -->
+    <section class="day-section" id="d13" data-day="13" data-city="taipei" data-accent="brick" data-screen-label="Day 13 · Taipei">
+      <header class="day-head reveal">
+        <div class="day-num">13<span class="sub">十八日 · Sab</span></div>
+        <div class="day-titles">
+          <div class="date">18 Luglio 2026 <span class="dot-sep"></span> Sabato <span class="dot-sep"></span> Return</div>
+          <h2>Ritorno a <span class="em">Taipei</span></h2>
+          <div class="place-cn">大稻埕 — Dadaocheng</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Consegna auto direttamente alla Taitung TRA station, Puyuma Express verso Taipei, check-in nel quartiere creativo di Dadaocheng. Cena al mercato notturno di Ningxia a 300 m.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Treno e città</span></div>
+          <ol>
+            <li><span class="time">08:30</span><div class="body">Check-out homestay, auto Chishang → Taitung TRA (1h).</div></li>
+            <li><span class="time">10:00</span><div class="body"><b>Consegna auto</b> direttamente in stazione (Hotai/IWS hanno ufficio in TRA).</div></li>
+            <li><span class="time">11:04</span><div class="body"><b>Puyuma Express 417</b> Taitung → Taipei. ~3h30, bian dang acquistato in stazione per il treno.</div></li>
+            <li><span class="time">15:07</span><div class="body">Arrivo Taipei Main Station. Check-in <b>Tomato TTT</b>, 10 min a piedi.</div></li>
+            <li><span class="time">19:00</span><div class="body">Cena al <b>Ningxia Night Market</b> <span class="cn">寧夏夜市</span>, 300 m dall'hotel.</div></li>
+            <li><span class="time">21:30</span><div class="body">Drink rooftop opzionale (Frank Taipei o Plus Eight).</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-thumb"><svg viewBox="0 0 200 110" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><pattern id="t13" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(15)">
+                <rect width="5" height="10" fill="#a08260" opacity="0.35"/></pattern></defs>
+              <rect width="200" height="110" fill="#D3BFA1"/>
+              <rect width="200" height="110" fill="url(#t13)"/>
+              <text x="100" y="60" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" letter-spacing="2" fill="#8B4A2B">[ DADAOCHENG · TAIYUAN ]</text>
+            </svg></div>
+            <div class="h-label"><span class="lab">Notte 13</span><span class="nights">3 notti</span></div>
+            <h3>Tomato TTT</h3>
+            <div class="h-cn">番茄行旅 INN · Taiyuan 156-2</div>
+            <div class="h-meta"><span>Adults-only</span><span>6 camere</span><span>9.5 / 10</span></div>
+            <p class="h-desc">Boutique design taiwanese contemporaneo, ottone-rattan-ferro. Lavatrice in camera, luggage storage gratuito.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 14 ───────── -->
+    <section class="day-section" id="d14" data-day="14" data-city="taipei" data-accent="brick" data-screen-label="Day 14 · Taipei">
+      <header class="day-head reveal">
+        <div class="day-num">14<span class="sub">十九日 · Dom</span></div>
+        <div class="day-titles">
+          <div class="date">19 Luglio 2026 <span class="dot-sep"></span> Domenica</div>
+          <h2>Taipei — <span class="em">l'ultima volta</span></h2>
+          <div class="place-cn">大稻埕 · Maokong · Beitou</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Un giorno per chiudere cose lasciate aperte: il tempio mancato, la gita oltre città, una vera lezione di tai chi se la si vuole. Tutto in coerenza con i primi tre giorni.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Su misura</span></div>
+          <ol>
+            <li><span class="time">06:30</span><div class="body">Tai chi al 228 Peace Park, Daan Park o CKS Memorial Hall. Stile Yang, libero.</div></li>
+            <li><span class="time">09:30</span><div class="body"><b>Opzione A</b>: lezione strutturata di tai chi in studio anglofono (1.5–2h, prenotare in anticipo).</div></li>
+            <li><span class="time">09:30</span><div class="body"><b>Opzione B</b>: National Palace Museum, Dadaocheng a piedi, o quartiere mancato.</div></li>
+            <li><span class="time">14:00</span><div class="body">Maokong gondola + tea house, o Beitou hot springs (storia), o Yangmingshan, o Jiufen day trip.</div></li>
+            <li><span class="time">19:00</span><div class="body">Cena mercato notturno (Raohe, Shilin o Linjiang).</div></li>
+            <li><span class="time">21:00</span><div class="body">Ultima passeggiata serale a Dadaocheng.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Notte 14</span><span class="nights">stesso</span></div>
+            <h3>Tomato TTT</h3>
+            <div class="h-cn">番茄行旅 INN</div>
+            <p class="h-desc">Camera invariata. Domani check-out non prima delle 16: il volo è alle 21.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────── Day 15 ───────── -->
+    <section class="day-section" id="d15" data-day="15" data-city="taipei" data-accent="brick" data-screen-label="Day 15 · Volo">
+      <header class="day-head reveal">
+        <div class="day-num">15<span class="sub">二十日 · Lun</span></div>
+        <div class="day-titles">
+          <div class="date">20 Luglio 2026 <span class="dot-sep"></span> Lunedì <span class="dot-sep"></span> Departure</div>
+          <h2>Volo, <span class="em">ore 21:00</span></h2>
+          <div class="place-cn">Taipei → Italia</div>
+        </div>
+      </header>
+      <p class="day-lede reveal d1">Tre notti finali contro due hanno il vantaggio della giornata intera: doccia, riposo, cambio per il volo, partenza senza fretta. Il vero lusso del lungo viaggio è il check-out tardi.</p>
+
+      <div class="day-grid">
+        <div class="timeline reveal d2">
+          <div class="label-row"><span class="l">Programma</span><span class="l">Last day</span></div>
+          <ol>
+            <li><span class="time">10:00</span><div class="body">Ultime attività libere: Dadaocheng a piedi, mercato Yongle, eventuali ultimi caffè.</div></li>
+            <li><span class="time">13:00</span><div class="body">Pranzo lento in zona Dadaocheng o Chifeng.</div></li>
+            <li><span class="time">14:30</span><div class="body">Rientro hotel — doccia, riposo, cambio per il volo (il vantaggio della terza notte).</div></li>
+            <li><span class="time">16:00</span><div class="body">Check-out Tomato TTT. MRT a Taipei Main Station.</div></li>
+            <li><span class="time">17:00</span><div class="body">Airport MRT Express → Taoyuan T1/T2 (36 min).</div></li>
+            <li><span class="time">21:00</span><div class="body"><b>Volo</b>. Il viaggio si chiude esattamente come si è aperto: alto sopra l'isola.</div></li>
+          </ol>
+        </div>
+
+        <aside class="side-col reveal d3">
+          <div class="hotel-card">
+            <div class="h-label"><span class="lab">Last morning</span><span class="nights">Volo 21:00</span></div>
+            <h3>Tomato TTT</h3>
+            <div class="h-cn">番茄行旅 INN</div>
+            <p class="h-desc">Camera fino alle 16. Lavatrice in camera utile per partire con bagagli ordinati.</p>
+          </div>
+          <p class="note">«Ogni viaggio finisce esattamente dove è iniziato — solo il viaggiatore è cambiato.»<span class="who">Note · ultimo giorno</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ SUMMARY ═══════════════════════ -->
+    <section class="summary" id="summary" data-screen-label="Riepilogo">
+      <div class="s-eyebrow reveal">Riepilogo · 總覽</div>
+      <h2 class="reveal d1">Quindici giorni, <span class="em">in numeri</span>.</h2>
+
+      <div class="stats-grid reveal d2">
+        <div class="stat"><div class="v">15<span class="u">giorni</span></div><div class="l">Durata</div></div>
+        <div class="stat"><div class="v">7<span class="u">tappe</span></div><div class="l">Città / villaggi</div></div>
+        <div class="stat"><div class="v">~1000<span class="u">km</span></div><div class="l">Percorso totale</div></div>
+        <div class="stat"><div class="v">3<span class="u">mezzi</span></div><div class="l">Aereo · treno · auto</div></div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="reveal d2">
+          <h3>Hotel <span style="font-family:var(--tc);font-size:0.7em;color:var(--ink-mute);letter-spacing:0.2em;">· 住宿</span></h3>
+          <ul class="hotel-list">
+            <li data-accent="brick"><span class="n">1–3 · 13–15</span><span class="nm">Humble Boutique Hotel <span class="city">+ Tomato TTT · Taipei</span></span><span class="nights">6 notti</span></li>
+            <li data-accent="brick"><span class="n">4–5</span><span class="nm">Yong Le, Tribute Portfolio<span class="city">Lukang · 鹿港</span></span><span class="nights">2 notti</span></li>
+            <li data-accent="tea"><span class="n">6</span><span class="nm">Yellow &amp; Black Guest House<span class="city">Meinong · 美濃</span></span><span class="nights">1 notte</span></li>
+            <li data-accent="brick"><span class="n">7–8</span><span class="nm">Hotel Initial-Tainan<span class="city">Tainan · 臺南</span></span><span class="nights">2 notti</span></li>
+            <li data-accent="pacific"><span class="n">9–10</span><span class="nm">La Tree Homestay<span class="city">Dulan · 都蘭</span></span><span class="nights">2 notti</span></li>
+            <li data-accent="tea"><span class="n">11–12</span><span class="nm">How Has Homestay<span class="city">Chishang · 池上</span></span><span class="nights">2 notti</span></li>
+          </ul>
+        </div>
+
+        <div class="reveal d3">
+          <h3>Da prenotare <span style="font-family:var(--tc);font-size:0.7em;color:var(--ink-mute);letter-spacing:0.2em;">· 待辦</span></h3>
+          <ul class="todo-list">
+            <li data-accent="brick"><b>Auto a noleggio</b> — pickup Taichung HSR 9/7 ore 12:00, drop-off <em>Taitung TRA station</em> 18/7 ore 10:00.<span class="pri">urgente</span></li>
+            <li data-accent="pacific"><b>Puyuma Express 417</b> Taitung → Taipei 18/7 — prenotazione apre 4/7 alle 00:00 ora Taiwan (~18:00 del 3/7 europea). <span class="pri">sveglia</span></li>
+            <li data-accent="brick"><b>HSR Taipei → Taichung</b> 9/7 — prenotazione apre 10/6, possibili sconti early bird 10–35%.<span class="pri">10 giugno</span></li>
+            <li><b>'Etolan Style Tour</b> Dulan 15/7 — email <em>etulan1109@gmail.com</em> o LINE, almeno 3 giorni prima.</li>
+            <li><b>Studio Panai Faki / Brother Pan</b> Donghe — chiamare per verificare apertura del 15/7.</li>
+            <li><b>Verifica IDP</b> (italiano vs spagnolo) — contattare IWS via email prima della prenotazione auto.</li>
+            <li><b>Cancellare Humble</b> notti 18 e 19 luglio — sostituite con Tomato TTT.</li>
+            <li><b>Lezione tai chi Taipei</b> 19 o 20 luglio (opzionale) — studio anglofono via MyTaiwanTour.</li>
+            <li><b>Du Hsiao Yueh</b> Tainan + workshop lanterne Lukang + ombrelli Meinong — prenotare 24–48h prima.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─────────── Sticky Taiwan Map ─────────── -->
+  <aside class="map-rail" aria-hidden="false">
+    <div class="map-rail-inner">
+      <div class="map-head">
+        <span class="label">Mappa · 地圖</span>
+        <span class="now" id="map-now">Inizio</span>
+      </div>
+
+      <svg class="taiwan" viewBox="0 0 220 600" preserveAspectRatio="xMidYMid meet" id="taiwan-map">
+        <defs>
+          <pattern id="grain2" width="3" height="3" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.3" fill="rgba(0,0,0,0.04)"/>
+          </pattern>
+        </defs>
+
+        <!-- Graticule subtle -->
+        <line x1="0" y1="395" x2="220" y2="395" class="grat" stroke-dasharray="2 4"/>
+
+        <!-- Outline -->
+        <path class="outline" d="
+          M 138 38
+          C 152 44, 165 60, 170 88
+          C 175 120, 178 158, 178 200
+          C 178 252, 175 308, 168 360
+          C 161 412, 150 462, 136 502
+          C 124 535, 112 552, 100 545
+          C 92 538, 86 518, 80 488
+          C 70 432, 60 372, 55 308
+          C 51 244, 53 182, 60 130
+          C 67 88, 80 58, 100 46
+          C 115 38, 128 36, 138 38 Z
+        "/>
+        <path class="outline" d="
+          M 138 38 C 152 44, 165 60, 170 88 C 175 120, 178 158, 178 200
+          C 178 252, 175 308, 168 360 C 161 412, 150 462, 136 502
+          C 124 535, 112 552, 100 545 C 92 538, 86 518, 80 488
+          C 70 432, 60 372, 55 308 C 51 244, 53 182, 60 130
+          C 67 88, 80 58, 100 46 C 115 38, 128 36, 138 38 Z
+        " fill="url(#grain2)" stroke="none"/>
+
+        <!-- Central mountain ridge -->
+        <path class="ridge" d="M 120 92 Q 130 200, 122 320 T 108 470"/>
+        <path class="ridge" d="M 132 130 Q 138 220, 130 340"/>
+
+        <!-- Route segments — drawn progressively -->
+        <!-- s1: rail Taipei → Taichung HSR (dashed) -->
+        <path class="seg dashed" id="seg-1" d="M 148 75 Q 110 130, 90 215"/>
+        <!-- s2: car Taichung HSR → Lukang -->
+        <path class="seg solid" id="seg-2" d="M 90 215 Q 80 225, 72 240"/>
+        <!-- s3: car Lukang → Meinong (long southbound) -->
+        <path class="seg solid" id="seg-3" d="M 72 240 Q 78 320, 85 380 T 115 430"/>
+        <!-- s4: car Meinong → Tainan -->
+        <path class="seg solid" id="seg-4" d="M 115 430 Q 100 425, 85 410"/>
+        <!-- s5: car Tainan → Fo Guang Shan → Dulan -->
+        <path class="seg solid" id="seg-5" d="M 85 410 Q 95 432, 105 455 Q 125 470, 152 445"/>
+        <!-- s6: car Dulan → Chishang -->
+        <path class="seg solid" id="seg-6" d="M 152 445 Q 158 420, 155 395"/>
+        <!-- s7: car Chishang → Taitung TRA -->
+        <path class="seg solid" id="seg-7" d="M 155 395 Q 150 430, 140 475"/>
+        <!-- s8: rail Taitung → Taipei (dashed, long east-coast back) -->
+        <path class="seg dashed" id="seg-8" d="M 140 475 Q 175 340, 170 200 Q 165 100, 148 75"/>
+
+        <!-- Cities -->
+        <g class="cities">
+          <g class="city" data-key="taipei" data-target="d1">
+            <circle class="ring" cx="148" cy="75" r="5.4"/>
+            <circle class="core" cx="148" cy="75" r="2"/>
+            <text class="label" x="156" y="73">Taipei</text>
+            <text class="label" x="156" y="82" style="font-family:var(--tc);letter-spacing:0.18em;">臺北</text>
+          </g>
+          <g class="city" data-key="lukang" data-target="d4">
+            <circle class="ring" cx="72" cy="240" r="5"/>
+            <circle class="core" cx="72" cy="240" r="2"/>
+            <text class="label" x="14" y="238">Lukang</text>
+            <text class="label" x="14" y="247" style="font-family:var(--tc);letter-spacing:0.18em;">鹿港</text>
+          </g>
+          <g class="city" data-key="meinong" data-target="d6">
+            <circle class="ring" cx="115" cy="430" r="5"/>
+            <circle class="core" cx="115" cy="430" r="2"/>
+            <text class="label" x="123" y="428">Meinong</text>
+            <text class="label" x="123" y="437" style="font-family:var(--tc);letter-spacing:0.18em;">美濃</text>
+          </g>
+          <g class="city" data-key="tainan" data-target="d7">
+            <circle class="ring" cx="85" cy="410" r="5"/>
+            <circle class="core" cx="85" cy="410" r="2"/>
+            <text class="label" x="20" y="408">Tainan</text>
+            <text class="label" x="20" y="417" style="font-family:var(--tc);letter-spacing:0.18em;">臺南</text>
+          </g>
+          <g class="city" data-key="foguangshan" data-target="d9">
+            <circle class="ring" cx="105" cy="455" r="3.6"/>
+            <circle class="core" cx="105" cy="455" r="1.4"/>
+            <text class="label" x="78" y="468">Fo Guang Shan</text>
+          </g>
+          <g class="city" data-key="dulan" data-target="d9">
+            <circle class="ring" cx="152" cy="445" r="5"/>
+            <circle class="core" cx="152" cy="445" r="2"/>
+            <text class="label" x="160" y="443">Dulan</text>
+            <text class="label" x="160" y="452" style="font-family:var(--tc);letter-spacing:0.18em;">都蘭</text>
+          </g>
+          <g class="city" data-key="chishang" data-target="d11">
+            <circle class="ring" cx="155" cy="395" r="5"/>
+            <circle class="core" cx="155" cy="395" r="2"/>
+            <text class="label" x="163" y="393">Chishang</text>
+            <text class="label" x="163" y="402" style="font-family:var(--tc);letter-spacing:0.18em;">池上</text>
+          </g>
+          <g class="city" data-key="taitung" data-target="d13">
+            <circle class="ring" cx="140" cy="475" r="3.6"/>
+            <circle class="core" cx="140" cy="475" r="1.4"/>
+            <text class="label" x="148" y="478">Taitung</text>
+          </g>
+        </g>
+
+        <!-- Compass -->
+        <g transform="translate(200 60)">
+          <line x1="0" y1="-10" x2="0" y2="10" stroke="var(--ink-soft)" stroke-width="0.5"/>
+          <polygon points="0,-10 -2,-3 2,-3" fill="var(--ink-soft)"/>
+          <text class="compass" text-anchor="middle" y="-13">N</text>
+        </g>
+
+        <!-- Scale -->
+        <g transform="translate(14 568)">
+          <line class="scale-bar" x1="0" y1="0" x2="38" y2="0"/>
+          <line class="scale-bar" x1="0" y1="-2.5" x2="0" y2="2.5"/>
+          <line class="scale-bar" x1="38" y1="-2.5" x2="38" y2="2.5"/>
+          <text class="scale-txt" y="-5">100 km</text>
+        </g>
+
+        <!-- Tropic label -->
+        <text x="60" y="392" class="sea-label" font-family="Cormorant Garamond" font-style="italic" font-size="6" fill="var(--ink-fade)" letter-spacing="2">tropico del cancro</text>
+
+        <!-- Sea labels -->
+        <text x="14" y="160" class="sea-label" font-family="Cormorant Garamond" font-style="italic" font-size="7" fill="var(--ink-fade)" letter-spacing="2">Stretto</text>
+        <text x="14" y="172" class="sea-label" font-family="Cormorant Garamond" font-style="italic" font-size="5" fill="var(--ink-fade)" letter-spacing="2">臺灣海峽</text>
+
+        <text x="195" y="300" class="sea-label" font-family="Cormorant Garamond" font-style="italic" font-size="7" fill="var(--ink-fade)" letter-spacing="2" text-anchor="end">Pacifico</text>
+        <text x="195" y="312" class="sea-label" font-family="Cormorant Garamond" font-style="italic" font-size="5" fill="var(--ink-fade)" letter-spacing="2" text-anchor="end">太平洋</text>
+      </svg>
+
+      <div class="map-legend">
+        <div class="item"><span class="swatch"></span>Auto · 車</div>
+        <div class="item"><span class="swatch dashed"></span>Treno · 火車</div>
+        <div class="item"><span class="swatch dot"></span>Tappa</div>
+        <div class="item"><span class="swatch" style="opacity:0.4"></span>Da percorrere</div>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<!-- ═══════════════════════ COLOPHON ═══════════════════════ -->
+<footer class="colophon">
+  <div class="left">
+    <span>Itinerario 2026</span>
+    <span>Bozza 03</span>
+    <span>Aggiornata 16 maggio</span>
+  </div>
+  <div class="end">Si parte tra 51 giorni.</div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ───── Day list config ───── */
+  const DAYS = Array.from({length: 15}, (_, i) => i + 1);
+  const CITY_NAMES = {
+    taipei:      { en: 'Taipei',          cn: '臺北'   },
+    lukang:      { en: 'Lukang',          cn: '鹿港'   },
+    meinong:     { en: 'Meinong',         cn: '美濃'   },
+    tainan:      { en: 'Tainan',          cn: '臺南'   },
+    dulan:       { en: 'Dulan',           cn: '都蘭'   },
+    chishang:    { en: 'Chishang',        cn: '池上'   },
+    foguangshan: { en: 'Fo Guang Shan',   cn: '佛光山' },
+    taitung:     { en: 'Taitung',         cn: '臺東'   }
+  };
+
+  /* ───── Build day nav buttons ───── */
+  const navEl = document.getElementById('day-nav');
+  DAYS.forEach(n => {
+    const btn = document.createElement('button');
+    btn.className = 'day-dot';
+    btn.dataset.target = 'd' + n;
+    btn.setAttribute('aria-label', 'Giorno ' + n);
+    btn.innerHTML = '<span class="dot"></span><span class="num">' + String(n).padStart(2,'0') + '</span>';
+    btn.addEventListener('click', () => {
+      const el = document.getElementById('d' + n);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.pageYOffset - 60;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+    navEl.appendChild(btn);
+  });
+  const dotBtns = Array.from(navEl.querySelectorAll('.day-dot'));
+
+  /* ───── Map segments setup — compute lengths, hide all ───── */
+  const segIds = ['seg-1','seg-2','seg-3','seg-4','seg-5','seg-6','seg-7','seg-8'];
+  const segs = segIds.map(id => {
+    const el = document.getElementById(id);
+    const len = el.getTotalLength();
+    el.style.strokeDasharray = el.classList.contains('dashed')
+      ? '3 3'
+      : String(len);
+    el.style.strokeDashoffset = String(len);
+    el.dataset.length = len;
+    el.dataset.drawn = '0';
+    return el;
+  });
+
+  // Map: which segments are "completed" up to (and including) each day?
+  // Keys = day number, values = array of segment indexes (0-based) that
+  // should be FULLY drawn once you've reached that day.
+  const SEG_FOR_DAY = {
+    1:  [],
+    2:  [],
+    3:  [],
+    4:  [0, 1],            // Taipei → Taichung (rail), Taichung → Lukang (car)
+    5:  [0, 1],
+    6:  [0, 1, 2],         // Lukang → Meinong
+    7:  [0, 1, 2, 3],      // Meinong → Tainan
+    8:  [0, 1, 2, 3],
+    9:  [0, 1, 2, 3, 4],   // Tainan → Fo Guang Shan → Dulan
+    10: [0, 1, 2, 3, 4],
+    11: [0, 1, 2, 3, 4, 5],   // Dulan → Chishang
+    12: [0, 1, 2, 3, 4, 5],
+    13: [0, 1, 2, 3, 4, 5, 6, 7],   // Chishang → Taitung TRA → Taipei (rail back)
+    14: [0, 1, 2, 3, 4, 5, 6, 7],
+    15: [0, 1, 2, 3, 4, 5, 6, 7]
+  };
+
+  // City visited up to and including a given day
+  const CITY_FOR_DAY = {
+    1:  ['taipei'],
+    2:  ['taipei'],
+    3:  ['taipei'],
+    4:  ['taipei','lukang'],
+    5:  ['taipei','lukang'],
+    6:  ['taipei','lukang','meinong'],
+    7:  ['taipei','lukang','meinong','tainan'],
+    8:  ['taipei','lukang','meinong','tainan'],
+    9:  ['taipei','lukang','meinong','tainan','foguangshan','dulan'],
+    10: ['taipei','lukang','meinong','tainan','foguangshan','dulan'],
+    11: ['taipei','lukang','meinong','tainan','foguangshan','dulan','chishang'],
+    12: ['taipei','lukang','meinong','tainan','foguangshan','dulan','chishang'],
+    13: ['taipei','lukang','meinong','tainan','foguangshan','dulan','chishang','taitung'],
+    14: ['taipei','lukang','meinong','tainan','foguangshan','dulan','chishang','taitung'],
+    15: ['taipei','lukang','meinong','tainan','foguangshan','dulan','chishang','taitung']
+  };
+
+  // Active city at exactly each day (singular)
+  const ACTIVE_CITY = {
+    1:'taipei', 2:'taipei', 3:'taipei',
+    4:'lukang', 5:'lukang', 6:'meinong',
+    7:'tainan', 8:'tainan',
+    9:'dulan', 10:'dulan',
+    11:'chishang', 12:'chishang',
+    13:'taipei', 14:'taipei', 15:'taipei'
+  };
+
+  // Pretty title shown in the map header for each day
+  const NOW_LABEL = {
+    1: 'Taipei · 臺北', 2: 'Taipei · 臺北', 3: 'Taipei · 臺北',
+    4: 'Lukang · 鹿港', 5: 'Lukang · 鹿港', 6: 'Meinong · 美濃',
+    7: 'Tainan · 臺南', 8: 'Tainan · 臺南',
+    9: 'Dulan · 都蘭', 10: 'Dulan · 都蘭',
+    11: 'Chishang · 池上', 12: 'Chishang · 池上',
+    13: 'Taipei · 大稻埕', 14: 'Taipei · 大稻埕', 15: 'In volo'
+  };
+
+  /* ───── State + apply ───── */
+  let currentDay = 0;
+  const cityNodes = Array.from(document.querySelectorAll('.taiwan .city'));
+  const nowLabel = document.getElementById('map-now');
+
+  function applyDay(day) {
+    if (day === currentDay) return;
+    currentDay = day;
+
+    // Day nav dots
+    dotBtns.forEach((b, i) => {
+      const n = i + 1;
+      b.classList.toggle('is-active', n === day);
+      b.classList.toggle('is-past', n < day);
+    });
+
+    if (day === 0) {
+      // Pre-journey state — reset
+      segs.forEach(s => {
+        s.style.strokeDashoffset = s.dataset.length;
+        s.dataset.drawn = '0';
+      });
+      cityNodes.forEach(c => {
+        c.classList.remove('is-active');
+        c.classList.remove('is-visited');
+      });
+      nowLabel.textContent = 'Inizio';
+      return;
+    }
+
+    // Segments
+    const toDraw = SEG_FOR_DAY[day] || [];
+    segs.forEach((s, i) => {
+      const shouldDraw = toDraw.indexOf(i) > -1;
+      if (shouldDraw && s.dataset.drawn !== '1') {
+        // animate to drawn
+        s.style.strokeDashoffset = '0';
+        s.dataset.drawn = '1';
+      } else if (!shouldDraw && s.dataset.drawn !== '0') {
+        s.style.strokeDashoffset = s.dataset.length;
+        s.dataset.drawn = '0';
+      }
+    });
+
+    // Cities
+    const visited = CITY_FOR_DAY[day] || [];
+    const active = ACTIVE_CITY[day];
+    cityNodes.forEach(c => {
+      const k = c.dataset.key;
+      c.classList.toggle('is-visited', visited.indexOf(k) > -1);
+      c.classList.toggle('is-active', k === active);
+    });
+
+    nowLabel.textContent = NOW_LABEL[day] || '';
+  }
+
+  /* ───── IntersectionObserver: track active day section ───── */
+  const sections = Array.from(document.querySelectorAll('.day-section'));
+  const visMap = new Map();
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      visMap.set(e.target, e.intersectionRatio);
+    });
+    // Pick the section with greatest visibility
+    let best = null, bestVal = 0;
+    visMap.forEach((v, k) => {
+      if (v > bestVal) { bestVal = v; best = k; }
+    });
+    if (best && bestVal > 0.02) {
+      const day = parseInt(best.dataset.day, 10);
+      applyDay(day);
+    } else if (window.scrollY < window.innerHeight * 0.6) {
+      applyDay(0);
+    }
+  }, {
+    rootMargin: '-30% 0px -45% 0px',
+    threshold: [0, 0.1, 0.25, 0.5, 0.75, 1]
+  });
+  sections.forEach(s => io.observe(s));
+
+  /* ───── Reveal on scroll for content blocks ───── */
+  const revealIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        revealIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
+
+  /* ───── Map city click → scroll to its day ───── */
+  cityNodes.forEach(c => {
+    c.addEventListener('click', () => {
+      const tgt = c.dataset.target;
+      const el = document.getElementById(tgt);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.pageYOffset - 40;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+    // tooltip-ish: bring label forward on hover
+    c.addEventListener('mouseenter', () => c.classList.add('is-hover'));
+    c.addEventListener('mouseleave', () => c.classList.remove('is-hover'));
+  });
+
+  /* ───── Init ───── */
+  applyDay(0);
+})();
+</script>
+
+</body>
+</html>
